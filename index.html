@@ -1,1 +1,89 @@
-<h1>Hello, World!</h1>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">Toggle Theme</button>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="container">
+    <div class="home-content">
+      <div class="text-content">
+        <h1 id="typing-text" class="typing">
+          <span id="display-text"></span>
+          <span id="cursor" class="cursor"></span>
+        </h1>
+        <p class="description">
+          Welcome to my portfolio site. Explore innovative projects and get in touch to collaborate on your next big idea.
+        </p>
+      </div>
+      <img src="./logo.png" alt="Portfolio Logo" class="logo-image">
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-image">
+      <p>
+        Hi, I'm a passionate web developer with a focus on creating secure and innovative web solutions. 
+        I specialize in front-end and back-end development, with a keen interest in web security, 
+        as demonstrated by my work on projects like WPHunter. 
+        When I'm not coding, I enjoy exploring new technologies and contributing to open-source projects.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="dev">Dev</button>
+      <button class="filter-btn" data-filter="security">Security</button>
+    </div>
+    <div class="project-grid" id="project-grid"></div>
+  </section>
+
+  <section id="team" class="container">
+    <h2>My Team</h2>
+    <div class="team-grid" id="team-grid"></div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div id="form-messages"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 JBU Web Programming - My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
