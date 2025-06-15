@@ -58,17 +58,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Project data with links
   const projects = [
-    { title: '중간고사 팀 프로젝트', category: 'dev', description: '웹해킹 학습 플랫폼 1', link: 'https://github.com/oesp91/WPHunter' },
-    { title: '중간고사 개인 프로젝트', category: 'dev', description: '개인 포트폴리오', link: 'https://example.com/portfolio' },
-    { title: '기말고사 팀 프로젝트', category: 'dev', description: '웹해킹 학습 플랫폼 2', link: 'https://example.com/portfolio' },
+    { title: '중간고사 팀 프로젝트', category: 'dev', description: '웹해킹 학습 플랫폼 1', link: 'https://jbu-web-team-flame.vercel.app/' },
+    { title: '중간고사 개인 프로젝트', category: 'dev', description: '개인 포트폴리오', link: 'https://project-html-alpha.vercel.app/' },
+    { title: '기말고사 팀 프로젝트', category: 'dev', description: '웹해킹 학습 플랫폼 2', link: 'https://web-programming-final-exam-team-one.vercel.app/' },
     { title: 'WPHunter', category: 'security', description: '워드프레스 취약점 탐지 자동화 도구', link: 'https://github.com/oesp91/WPHunter' },
   ];
 
   // Team data with links
   const team = [
-    { name: '심재훈', role: 'Security Researcher', description: 'Interested in Pwnable', image: './images/심재훈.jpeg', link: 'https://example.com/johndoe' },
-    { name: '우성민', role: 'Security Enginier', description: 'Looking for an area of interest', image: './images/우성민.jpg', link: 'https://example.com/janesmith' },
-    { name: '정재성', role: 'Security Researcher', description: 'Interested in Web Security', image: './images/정재성.jpeg', link: 'https://example.com/alexkim' },
+    { name: '심재훈', role: 'Security Researcher', description: 'Interested in Pwnable', image: './images/심재훈.jpeg', link: 'https://web-programming-final-exam.vercel.app/' },
+    { name: '우성민', role: 'Security Enginier', description: 'Looking for an area of interest', image: './images/우성민.jpg', link: 'https://final-team-six.vercel.app' },
+    { name: '정재성', role: 'Security Researcher', description: 'Interested in Web Security', image: './images/정재성.jpeg', link: 'https://final-personal-project-peach.vercel.app/' },
   ];
 
   // Render projects
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const card = document.createElement('div');
       card.classList.add('team-card');
       card.innerHTML = `
-        <img src="${member.image}" alt="${member.name}">
+        <img src="${member.image}" alt="${member.name}" class="profile-image">
         <h3>${member.name}</h3>
         <p>${member.role}</p>
         <p>${member.description}</p>
